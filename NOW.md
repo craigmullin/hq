@@ -66,7 +66,9 @@ without losing its legacy history or Firebase data contract.
   TypeScript, and Vite runtime; lint, build, signed-out browser flow, Firebase
   ownership, Firestore database, Hosting, and dependency audit passed.
 - Published Stat modernization commit `52337f9` and all 15 legacy branch tips
-  to `stat.git`; production deployment remains unchanged.
+  to `stat.git`.
+- Promoted Stat release `7c56a18` to `main` and deployed it to Firebase
+  Hosting with a one-time legacy service-worker cleanup.
 
 ## Open questions
 

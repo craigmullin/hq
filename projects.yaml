@@ -130,6 +130,7 @@ projects:
     legacy_source_status: present-with-history-and-uncommitted-work-verified-2026-08-04
     legacy_firebase_project: spikestat-pwa-epsilon
     modernization_commit: 52337f9
+    production_release_commit: 7c56a18
     preserved_legacy_branches: 15
     codex_project_path_at_audit: 'C:\Users\cmullin\code\spikestat-pwa-epsilon'
     codex_path_status_at_audit: legacy-source-not-canonical
@@ -144,6 +145,8 @@ projects:
       build: passed-2026-08-04
       dependency_audit: zero-production-vulnerabilities-2026-08-04
       signed_out_browser_flow: passed-2026-08-04
+      firebase_hosting_deploy: passed-2026-08-04
+      deployed_html: verified-2026-08-04
     risks:
       - Preserve legacy history and the uncommitted src/components/Delete.vue file until the rewrite and backend migration are verified.
       - Verify authenticated data access and effective Firestore rules before deployment.
