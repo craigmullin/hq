@@ -12,6 +12,7 @@ projects:
     intended_remote: 'git@github.com:craigmullin/hq.git'
     observed_local_remote: 'git@github.com:craigmullin/hq.git'
     default_branch: main
+    integration_branch: develop
     maturity: established-baseline
     production_url: unknown
     hosting: unknown
@@ -30,6 +31,7 @@ projects:
     intended_remote: 'git@github.com:craigmullin/cmdc.git'
     observed_local_remote: 'git@github.com:craigmullin/cmdc.git'
     default_branch: main
+    integration_branch: develop
     observed_branch: main
     maturity: developed-react-vite-application
     production_url: 'https://www.craigmullin.com'
@@ -58,6 +60,7 @@ projects:
     intended_remote: 'git@github.com:craigmullin/budget.git'
     observed_local_remote: 'git@github.com:craigmullin/budget.git'
     default_branch: main
+    integration_branch: develop
     maturity: empty-repository
     production_url: unknown
     hosting: unknown
@@ -76,10 +79,11 @@ projects:
     intended_remote: 'git@github.com:craigmullin/wonkyzipper.git'
     observed_local_remote: 'git@github.com:craigmullin/wonkyzipper.git'
     default_branch: main
-    maturity: minimal-html-css-site
+    integration_branch: develop
+    maturity: historical-placeholder-code-intended-restart
     commits_at_audit: 19
     production_url: 'https://wonkyzipper.com'
-    production_url_status: user-identified-domain-not-audit-verified
+    production_url_status: purchased-domain-only-user-confirmed-2026-08-04
     hosting: unknown
     codex_project_path_at_audit: 'C:\Users\cmullin\Documents\Wonky Zipper'
     codex_path_status_at_audit: different-empty-repository
@@ -87,7 +91,7 @@ projects:
     codex_path_status_current: canonical
     dependencies: []
     risks:
-      - Production, placeholder, or historical status is unknown.
+      - Preserve the 19-commit historical placeholder until the flagship replacement is verified.
 
   - id: ledger
     name: Ledger
@@ -97,6 +101,7 @@ projects:
     intended_remote: 'git@github.com:craigmullin/ledger.git'
     observed_local_remote: 'git@github.com:craigmullin/ledger.git'
     default_branch: main
+    integration_branch: develop
     maturity: empty-repository
     production_url: unknown
     hosting: unknown
@@ -110,20 +115,27 @@ projects:
   - id: stat
     name: Stat
     kind: future-application
-    responsibility: Volleyball statistics tracking
+    responsibility: SpikeStat rewrite for parents and other interested parties tracking a volleyball player's statistics
     intended_local_path: 'C:\Users\cmullin\code\stat'
     intended_remote: 'git@github.com:craigmullin/stat.git'
     observed_local_remote: 'git@github.com:craigmullin/stat.git'
     default_branch: main
+    integration_branch: develop
     maturity: empty-repository
     production_url: unknown
     hosting: unknown
+    legacy_source_path: 'C:\Users\cmullin\code\spikestat-pwa-epsilon'
+    legacy_source_remote: 'https://craigmullin@bitbucket.org/craigmullin/spikestat-pwa-epsilon.git'
+    legacy_source_status: present-with-history-and-uncommitted-work-verified-2026-08-04
+    legacy_firebase_project: spikestat-pwa-epsilon
     codex_project_path_at_audit: 'C:\Users\cmullin\code\spikestat-pwa-epsilon'
-    codex_path_status_at_audit: nonexistent
+    codex_path_status_at_audit: legacy-source-not-canonical
     codex_project_path_current: 'C:\Users\cmullin\code\stat'
     codex_path_status_current: canonical
     dependencies: []
-    risks: []
+    risks:
+      - Preserve legacy history and the uncommitted src/components/Delete.vue file until the rewrite and backend migration are verified.
+      - Inventory Firestore schema, security rules, indexes, authentication, and hosting before selecting a migration path.
 
   - id: design
     name: Design
@@ -134,6 +146,8 @@ projects:
     observed_local_remote: 'git@github.com:craigmullin/design.git'
     retained_legacy_remote: 'git@github.com:craigmullin/mullin-design-language.git'
     observed_branch: develop
+    default_branch: main
+    integration_branch: develop
     maturity: design-language-source
     production_url: unknown
     hosting: none
@@ -160,6 +174,8 @@ projects:
     observed_local_remote: 'git@github.com:craigmullin/chat.git'
     retained_legacy_remote: 'git@github.com:craigmullin/spikechat.git'
     observed_branch: develop
+    default_branch: main
+    integration_branch: develop
     maturity: baselined-react-vite-pwa
     commits_at_audit: 39
     production_url: 'https://spikechat-e682a.web.app'

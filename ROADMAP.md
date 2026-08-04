@@ -49,3 +49,12 @@ Status: in progress
 - Run available validation and add lightweight automation where useful.
 - Pin supported runtimes and replace fragile dependency declarations when
   justified by project-specific review.
+
+## Phase 5 — Product development
+
+Status: queued pending updated design-language guidance
+
+Follow the approved sequence and branch workflow in
+`decisions/2026-08-04-development-workflow.md`. The first product change is the
+CMDC refactor; Chat follows, including verification of the mobile About-page
+scroll fix.
