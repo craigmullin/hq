@@ -2,7 +2,15 @@
 
 Last reviewed: 2026-08-04
 
-Stat is a volleyball statistics tracking application. Its intended repository
-is empty. The saved Codex project pointed to a nonexistent
-`spikestat-pwa-epsilon` path at audit time. No technology, production URL,
-hosting platform, or initial product scope has been verified.
+Stat is the volleyball statistics tracking application and M.S product. The
+legacy Vue 2 application's complete selected ancestry and all 15 locally known
+Bitbucket branch tips are preserved in `stat.git`; the latter use `legacy/*`
+branch names. The prior untracked `Delete.vue` is archived outside the runtime.
+
+Canonical `develop` commit `52337f9` replaces the broken client with a React,
+TypeScript, Vite, and Firebase implementation that preserves the `matches` and
+embedded `games` Firestore contract. Firebase project/site
+`spikestat-pwa-epsilon`, its default Firestore database, and Hosting URL were
+verified. Lint, build, signed-out browser flow, and the production dependency
+audit pass. Authenticated Firestore reads and writes remain to be tested before
+deployment; production is unchanged.

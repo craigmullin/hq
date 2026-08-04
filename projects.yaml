@@ -129,6 +129,8 @@ projects:
     legacy_source_remote: 'https://craigmullin@bitbucket.org/craigmullin/spikestat-pwa-epsilon.git'
     legacy_source_status: present-with-history-and-uncommitted-work-verified-2026-08-04
     legacy_firebase_project: spikestat-pwa-epsilon
+    modernization_commit: 52337f9
+    preserved_legacy_branches: 15
     codex_project_path_at_audit: 'C:\Users\cmullin\code\spikestat-pwa-epsilon'
     codex_path_status_at_audit: legacy-source-not-canonical
     codex_project_path_current: 'C:\Users\cmullin\code\stat'

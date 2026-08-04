@@ -65,6 +65,8 @@ without losing its legacy history or Firebase data contract.
 - Replaced Stat's broken Vue 2 client with a legacy-compatible React,
   TypeScript, and Vite runtime; lint, build, signed-out browser flow, Firebase
   ownership, Firestore database, Hosting, and dependency audit passed.
+- Published Stat modernization commit `52337f9` and all 15 legacy branch tips
+  to `stat.git`; production deployment remains unchanged.
 
 ## Open questions
 
