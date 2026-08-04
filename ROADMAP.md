@@ -8,7 +8,7 @@ explicit approval.
 
 ## Phase 1 — Establish HQ safely
 
-Status: in progress
+Status: complete
 
 - Use `C:\Users\cmullin\code\hq` as the HQ repository.
 - Scaffold the operating documents and project registry.
@@ -18,7 +18,7 @@ Status: in progress
 
 ## Phase 2 — Correct saved Codex project paths
 
-Status: pending
+Status: in progress
 
 - Point each saved project to its matching directory under
   `C:\Users\cmullin\code`.
@@ -29,10 +29,11 @@ Status: pending
 
 ## Phase 3 — Reconcile repository identities
 
-Status: pending; architectural approval required before execution
+Status: in progress; architectural approval remains required for CMDC/Design separation
 
-- Protect Chat's uncommitted work, then preserve its full SpikeChat history
-  while reconciling `spikechat.git` with `chat.git`.
+- Chat's uncommitted work is protected and its full SpikeChat history is
+  verified in `chat.git`; retain `spikechat.git` until application and deploy
+  verification is complete.
 - Preserve Design history and deliberately separate the CMDC website from the
   reusable design-language source.
 - Establish `design.git` and `cmdc.git` as their intended canonical homes only

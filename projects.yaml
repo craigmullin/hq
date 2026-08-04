@@ -1,7 +1,7 @@
 schema_version: 1
 portfolio: CMDC
 last_reviewed: 2026-08-04
-registry_status: audit-baseline
+registry_status: normalization-in-progress
 
 projects:
   - id: hq
@@ -12,11 +12,13 @@ projects:
     intended_remote: 'git@github.com:craigmullin/hq.git'
     observed_local_remote: 'git@github.com:craigmullin/hq.git'
     default_branch: main
-    maturity: initial-baseline
+    maturity: established-baseline
     production_url: unknown
     hosting: unknown
     codex_project_path_at_audit: 'C:\Users\cmullin\Documents\cmdc'
     codex_path_status_at_audit: different-empty-repository
+    codex_project_path_current: 'C:\Users\cmullin\code\hq'
+    codex_path_status_current: canonical
     dependencies: []
     risks: []
 
@@ -31,9 +33,11 @@ projects:
     maturity: empty-repository
     production_url: 'https://www.craigmullin.com'
     production_url_status: user-identified-domain-not-audit-verified
-    hosting: unknown
+    hosting: Firebase ownership not yet reconciled; projects craigmullin and craigmullin-com both exist
     codex_project_path_at_audit: 'C:\Users\cmullin\Documents\CMDC 2'
     codex_path_status_at_audit: different-empty-repository
+    codex_project_path_current: 'C:\Users\cmullin\Documents\CMDC 2'
+    codex_path_status_current: stale-different-repository
     dependencies:
       - design
     risks:
@@ -52,6 +56,8 @@ projects:
     hosting: unknown
     codex_project_path_at_audit: 'C:\Users\cmullin\Documents\Budget'
     codex_path_status_at_audit: different-empty-repository
+    codex_project_path_current: 'C:\Users\cmullin\Documents\Budget'
+    codex_path_status_current: stale-different-repository
     dependencies: []
     risks: []
 
@@ -70,6 +76,8 @@ projects:
     hosting: unknown
     codex_project_path_at_audit: 'C:\Users\cmullin\Documents\Wonky Zipper'
     codex_path_status_at_audit: different-empty-repository
+    codex_project_path_current: 'C:\Users\cmullin\Documents\Wonky Zipper'
+    codex_path_status_current: stale-different-repository
     dependencies: []
     risks:
       - Production, placeholder, or historical status is unknown.
@@ -87,6 +95,8 @@ projects:
     hosting: unknown
     codex_project_path_at_audit: 'C:\Users\cmullin\Documents\Garage Ledger'
     codex_path_status_at_audit: different-empty-repository
+    codex_project_path_current: 'C:\Users\cmullin\Documents\Garage Ledger'
+    codex_path_status_current: stale-different-repository
     dependencies: []
     risks: []
 
@@ -103,6 +113,8 @@ projects:
     hosting: unknown
     codex_project_path_at_audit: 'C:\Users\cmullin\code\spikestat-pwa-epsilon'
     codex_path_status_at_audit: nonexistent
+    codex_project_path_current: 'C:\Users\cmullin\code\spikestat-pwa-epsilon'
+    codex_path_status_current: stale-nonexistent
     dependencies: []
     risks: []
 
@@ -112,16 +124,21 @@ projects:
     responsibility: Craig Mullin Design Language, tokens, components, and standards
     intended_local_path: 'C:\Users\cmullin\code\design'
     intended_remote: 'git@github.com:craigmullin/design.git'
-    observed_local_remote: 'git@github.com:craigmullin/mullin-design-language.git'
+    observed_local_remote: 'git@github.com:craigmullin/design.git'
+    retained_legacy_remote: 'git@github.com:craigmullin/mullin-design-language.git'
     observed_branch: develop
     maturity: developed-design-system-and-website
     production_url: unknown
-    hosting: Firebase project craigmullin observed for embedded CMDC site
+    hosting: Firebase project craigmullin; site craigmullin; default URL https://craigmullin.web.app
+    validation:
+      lint: passed-2026-08-04
+      build: passed-2026-08-04
     codex_project_path_at_audit: 'C:\Users\cmullin\code\mullin-design-language'
     codex_path_status_at_audit: nonexistent
+    codex_project_path_current: 'C:\Users\cmullin\code\mullin-design-language'
+    codex_path_status_current: stale-nonexistent
     dependencies: []
     risks:
-      - Intended and observed remotes differ.
       - Repository currently combines design-language and CMDC application roles.
       - Application dependencies use latest declarations and need later review.
 
@@ -132,18 +149,25 @@ projects:
     responsibility: SpikeChat
     intended_local_path: 'C:\Users\cmullin\code\chat'
     intended_remote: 'git@github.com:craigmullin/chat.git'
-    observed_local_remote: 'git@github.com:craigmullin/spikechat.git'
+    observed_local_remote: 'git@github.com:craigmullin/chat.git'
+    retained_legacy_remote: 'git@github.com:craigmullin/spikechat.git'
     observed_branch: develop
     maturity: mature-react-vite-pwa
     commits_at_audit: 39
     production_url: unknown
-    hosting: Firebase Hosting; project identifier unknown
+    hosting: Firebase project and site spikechat-e682a; default URL https://spikechat-e682a.web.app
+    validation:
+      lint: passed-2026-08-04
+      tests: 12-passed-2026-08-04
+      build: passed-2026-08-04
     codex_project_path_at_audit: 'C:\Users\cmullin\code\spikechat'
     codex_path_status_at_audit: nonexistent
+    codex_project_path_current: 'C:\Users\cmullin\code\spikechat'
+    codex_path_status_current: stale-nonexistent
     dependencies: []
     risks:
-      - Intended and observed remotes differ.
-      - Three uncommitted files must be protected before normalization.
+      - Three uncommitted files remain in the working tree and must be preserved.
+    uncommitted_backup_ref: backup/pre-normalization-work-2026-08-04
     uncommitted_files_at_audit:
       - src/App.css
       - src/features/snapchat/SnapchatEditorPage.tsx

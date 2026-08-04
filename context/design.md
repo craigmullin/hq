@@ -3,11 +3,16 @@
 Last reviewed: 2026-08-04
 
 Design owns the Craig Mullin Design Language: principles, tokens, typography,
-components, standards, and visual assets. The local working tree is developed
-but points to `mullin-design-language.git`, while `design.git` is the intended
-canonical repository and contains five design-language documents remotely.
+components, standards, and visual assets. On 2026-08-04, `design.git` was
+verified to contain the exact local `develop` and `main` branch tips. The local
+`origin` now points to `design.git`; the prior `mullin-design-language.git`
+remote is retained as `legacy-mullin-design-language`.
 
 The working tree also contains the CMDC React/Vite website and Firebase
 configuration, so it currently has two responsibilities. Their later
 separation must preserve history and avoid prematurely defining Design as a
-runtime package. The delivery mechanism to products remains undecided.
+runtime package. Lint and the production build passed on 2026-08-04. Firebase
+project and Hosting site `craigmullin` were verified, with default URL
+`https://craigmullin.web.app`; a second project/site, `craigmullin-com`, also
+exists and ownership intent remains unresolved. The delivery mechanism to
+products remains undecided.
