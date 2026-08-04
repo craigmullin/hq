@@ -9,9 +9,9 @@ Last reviewed: 2026-08-04
 | Budget | Future home-budgeting application | `C:\Users\cmullin\code\budget` | Documentation baseline prepared; implementation intentionally absent | Product outcome unknown |
 | Wonky Zipper | Independent retail brand and website | `C:\Users\cmullin\code\wonkyzipper` | Existing minimal HTML/CSS site; 19 commits at audit | Production status unknown |
 | Ledger | Auto-maintenance tracking application | `C:\Users\cmullin\code\ledger` | Documentation baseline prepared; implementation intentionally absent | Initial scope unknown |
-| Stat | Volleyball statistics application | `C:\Users\cmullin\code\stat` | Public synthetic-data demo and private Google-authenticated owner workspace deployed | `spikestat.craigmullin.com` TLS provisioning pending |
+| SpikeStat | Volleyball statistics application | `C:\Users\cmullin\code\stat` | Public demo and private owner workspace deployed at `spikestat.craigmullin.com` | None known |
 | Design | Shared design system and product guidance | `C:\Users\cmullin\code\design` | Updated v1 guidance; Playfair Display and Inter approved | Product accent hex values unresolved |
-| Chat | Chat application | `C:\Users\cmullin\code\chat` | Canonical naming applied; lint, tests, build, and PWA generation pass | Deployed PWA verification remains before legacy archival |
+| SpikeChat | Conversation mockup application | `C:\Users\cmullin\code\chat` | Canonical naming restored and deployed at `spikechat.craigmullin.com` | Installed-PWA update behavior remains to be observed |
 
 ## Portfolio boundaries
 
@@ -20,7 +20,7 @@ Last reviewed: 2026-08-04
 - CMDC owns the deployable `craigmullin.com` application.
 - Wonky Zipper remains a distinct public brand while belonging to the internal
   portfolio.
-- Chat, Budget, Ledger, and Stat remain independently bounded products.
+- SpikeChat, Budget, Ledger, and SpikeStat remain independently bounded products.
 - CMDC means only `craigmullin.com`; HQ is the portfolio umbrella and is not
   named CMDC HQ.
 

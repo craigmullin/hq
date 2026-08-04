@@ -15,9 +15,9 @@ product refactors while preserving each product's data and history.
 
 ## Next three actions
 
-1. Verify Firebase finishes provisioning HTTPS for `spikestat.craigmullin.com`.
-2. Plan the next product redesign against the approved Design guidance.
-3. Verify remaining production URLs and hosting projects.
+1. Plan the next product redesign against the approved Design guidance.
+2. Verify remaining production URLs and hosting projects.
+3. Observe installed-PWA updates for the deployed SpikeChat release.
 
 ## Blockers
 
@@ -31,12 +31,11 @@ product refactors while preserving each product's data and history.
 - Pointed the active HQ task at `C:\Users\cmullin\code\hq`.
 - Scaffolded the HQ control-plane documents without modifying product repos.
 - Committed and pushed the HQ baseline to `hq.git`.
-- Verified `chat.git` and `design.git` contain the exact developed branch tips.
-- Protected Chat's three-file dirty state in
+- Verified `spikechat.git` and `design.git` contain the exact developed branch tips.
+- Protected SpikeChat's three-file dirty state in
   `backup/pre-normalization-work-2026-08-04` without changing the worktree.
-- Made `chat.git` and `design.git` the local `origin` remotes while retaining
-  the legacy repositories as named remotes.
-- Passed Chat lint, 12 tests, and production build; passed the combined
+- Made `spikechat.git` and `design.git` the local `origin` remotes.
+- Passed SpikeChat lint, 12 tests, and production build; passed the combined
   Design/CMDC lint and production build.
 - Verified Firebase ownership and Hosting sites for `spikechat-e682a`,
   `craigmullin`, and `craigmullin-com` without changing them.
@@ -52,32 +51,34 @@ product refactors while preserving each product's data and history.
   dated backup refs, and ordinary cleanup commits.
 - Published CMDC `main` at `c7f7706` and Design `develop` at `5ba934b`; retained
   both remote review branches and changed no production deployment.
-- Reviewed and committed Chat's protected experimental-tools work at `0646b97`,
+- Reviewed and committed SpikeChat's protected experimental-tools work at `0646b97`,
   restoring pointer and keyboard caption-position support.
-- Established Chat's project-local operating baseline at `98da936`; lint, 12
+- Established SpikeChat's project-local operating baseline at `98da936`; lint, 12
   tests, build, PWA generation, browser flow, console, and Hosting URL passed.
 - Established canonical naming: HQ is distinct, and CMDC refers only to
   `craigmullin.com`.
 - Incorporated Heidi's shared design guidance and M.* product-family rules.
 - Prepared project-local canonical-state baselines for every repository.
-- Imported all locally known Stat history and Bitbucket branch tips without
+- Imported all locally known SpikeStat history and Bitbucket branch tips without
   changing the legacy working directory.
-- Replaced Stat's broken Vue 2 client with a legacy-compatible React,
+- Replaced SpikeStat's broken Vue 2 client with a legacy-compatible React,
   TypeScript, and Vite runtime; lint, build, signed-out browser flow, Firebase
   ownership, Firestore database, Hosting, and dependency audit passed.
-- Published Stat modernization commit `52337f9` and all 15 legacy branch tips
-  to `stat.git`.
-- Promoted Stat release `7c56a18` to `main` and deployed it to Firebase
+- Published SpikeStat modernization commit `52337f9` and all 15 legacy branch tips
+  to `spikestat.git`.
+- Promoted SpikeStat release `7c56a18` to `main` and deployed it to Firebase
   Hosting with a one-time legacy service-worker cleanup.
-- Deployed Stat password recovery release `f9b0590` for legacy users who no
+- Deployed SpikeStat password recovery release `f9b0590` for legacy users who no
   longer know their Firebase password.
-- Replaced Stat's transitional password flow with Google sign-in in release
+- Replaced SpikeStat's transitional password flow with Google sign-in in release
   `1c2a08b`; enabled the Firebase provider and deployed owner-only Firestore
   rules for verified account `cmlmullin@gmail.com`.
 - Approved Playfair Display and Inter as the shared primary typography and
   published Design commit `86d1f64`.
-- Published and deployed Stat release `07193be` with a public synthetic-data
+- Published and deployed SpikeStat release `07193be` with a public synthetic-data
   demo and a separate private Google-authenticated owner workspace.
+- Restored SpikeChat and SpikeStat as the canonical product and GitHub
+  repository identities across the portfolio.
 
 ## Open questions
 
@@ -85,5 +86,5 @@ product refactors while preserving each product's data and history.
 - Which production URLs and hosting projects are canonical?
 - Is the current Wonky Zipper site production, a placeholder, or historical?
 - What is Budget's desired initial outcome and priority?
-- Which existing or temporary Firebase account should be used for Stat's
+- Which existing or temporary Firebase account should be used for SpikeStat's
   authenticated Firestore flow validation?

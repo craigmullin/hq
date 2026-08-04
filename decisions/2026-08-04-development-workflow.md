@@ -20,9 +20,9 @@ redesign work without changing production.
 The approved product sequence is:
 
 1. Refactor CMDC (`craigmullin.com`) to the updated design language.
-2. Refactor Chat to the updated design language.
+2. Refactor SpikeChat to the updated design language.
 3. Rebuild Ledger from scratch to the updated design system.
-4. Rewrite Stat in the canonical `stat` repository, preserve and
+4. Rewrite SpikeStat in the canonical `spikestat` repository, preserve and
    study the legacy app/backend, then add the product to `craigmullin.com`.
 5. Refactor Design to the updated design language.
 6. Create Wonky Zipper as a standalone flagship project.

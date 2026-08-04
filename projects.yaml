@@ -41,6 +41,7 @@ projects:
       lint: passed-2026-08-04-after-separation
       build: passed-2026-08-04-after-separation
       production_asset_identity: matched-2026-08-04
+      spike_names_production: verified-2026-08-04
     codex_project_path_at_audit: 'C:\Users\cmullin\Documents\CMDC 2'
     codex_path_status_at_audit: different-empty-repository
     codex_project_path_current: 'C:\Users\cmullin\code\cmdc'
@@ -49,6 +50,7 @@ projects:
       - design
     preserved_history_ref: backup/imported-design-history-2026-08-04
     separation_commit: c7f7706
+    spike_name_commit: 97b0466
     risks: []
     separation_plan: decisions/2026-08-04-cmdc-design-separation.md
 
@@ -109,23 +111,24 @@ projects:
     codex_path_status_at_audit: different-empty-repository
     codex_project_path_current: 'C:\Users\cmullin\code\ledger'
     codex_path_status_current: canonical
+    spike_name_commit: f8537cd
     dependencies: []
     risks: []
 
-  - id: stat
-    name: Stat
+  - id: spikestat
+    name: SpikeStat
     kind: application
-    responsibility: Stat application for parents and other interested parties tracking a volleyball player's statistics
+    responsibility: SpikeStat application for parents and other interested parties tracking a volleyball player's statistics
     intended_local_path: 'C:\Users\cmullin\code\stat'
-    intended_remote: 'git@github.com:craigmullin/stat.git'
-    observed_local_remote: 'git@github.com:craigmullin/stat.git'
+    intended_remote: 'git@github.com:craigmullin/spikestat.git'
+    observed_local_remote: 'git@github.com:craigmullin/spikestat.git'
     default_branch: main
     integration_branch: develop
     maturity: deployed-react-vite-public-demo-private-owner-workspace
     production_url: 'https://spikestat.craigmullin.com'
-    production_url_status: dns-target-verified-tls-pending-2026-08-04
+    production_url_status: verified-https-200-2026-08-04
     firebase_default_url: 'https://spikestat-pwa-epsilon.web.app'
-    hosting: Firebase project and site spikestat-pwa-epsilon; custom-domain CNAME points to https://spikestat-pwa-epsilon.web.app; HTTPS certificate provisioning pending
+    hosting: Firebase project and site spikestat-pwa-epsilon; custom domain https://spikestat.craigmullin.com verified
     legacy_source_path: 'C:\Users\cmullin\code\spikestat-pwa-epsilon'
     legacy_source_remote: 'https://craigmullin@bitbucket.org/craigmullin/spikestat-pwa-epsilon.git'
     legacy_source_status: present-with-history-and-uncommitted-work-verified-2026-08-04
@@ -135,6 +138,7 @@ projects:
     password_recovery_commit: f9b0590
     google_sign_in_commit: 1c2a08b
     public_demo_commit: 07193be
+    spike_name_commit: ea3d9de
     preserved_legacy_branches: 15
     codex_project_path_at_audit: 'C:\Users\cmullin\code\spikestat-pwa-epsilon'
     codex_path_status_at_audit: legacy-source-not-canonical
@@ -153,11 +157,13 @@ projects:
       deployed_html: verified-2026-08-04
       deployed_password_recovery: verified-2026-08-04
       google_provider: enabled-2026-08-04
+      firebase_public_name: SpikeStat-verified-2026-08-04
       owner_only_firestore_rules: deployed-2026-08-04
       google_sign_in_screen: verified-2026-08-04
       public_demo_browser_flow: passed-2026-08-04
       authenticated_production_data_flow: verified-2026-08-04
       public_demo_hosting_deploy: passed-2026-08-04
+      spike_name_production: verified-2026-08-04
     risks:
       - Preserve legacy history and the uncommitted src/components/Delete.vue file until the rewrite and backend migration are verified.
       - Remove the legacy service-worker cleanup after the installed-client transition window.
@@ -189,24 +195,25 @@ projects:
     preserved_history_ref: backup/pre-separation-2026-08-04
     separation_commit: 5ba934b
     typography_commit: 86d1f64
+    spike_name_commit: 33ac91c
     risks: []
 
-  - id: chat
-    name: Chat
+  - id: spikechat
+    name: SpikeChat
     kind: pwa-application
-    responsibility: Chat application
+    responsibility: SpikeChat application
     intended_local_path: 'C:\Users\cmullin\code\chat'
-    intended_remote: 'git@github.com:craigmullin/chat.git'
-    observed_local_remote: 'git@github.com:craigmullin/chat.git'
-    retained_legacy_remote: 'git@github.com:craigmullin/spikechat.git'
+    intended_remote: 'git@github.com:craigmullin/spikechat.git'
+    observed_local_remote: 'git@github.com:craigmullin/spikechat.git'
     observed_branch: develop
     default_branch: main
     integration_branch: develop
     maturity: baselined-react-vite-pwa
     commits_at_audit: 39
-    production_url: 'https://spikechat-e682a.web.app'
-    production_url_status: firebase-default-url-verified-2026-08-04
-    hosting: Firebase project and site spikechat-e682a; default URL https://spikechat-e682a.web.app
+    production_url: 'https://spikechat.craigmullin.com'
+    production_url_status: verified-https-200-2026-08-04
+    firebase_default_url: 'https://spikechat-e682a.web.app'
+    hosting: Firebase project and site spikechat-e682a; custom domain https://spikechat.craigmullin.com verified
     validation:
       lint: passed-2026-08-04
       tests: 12-passed-2026-08-04
@@ -214,6 +221,7 @@ projects:
       browser_interaction: passed-2026-08-04
       hosting_response: passed-2026-08-04
       canonical_naming_lint_tests_build: passed-2026-08-04
+      spike_name_production: verified-2026-08-04
     codex_project_path_at_audit: 'C:\Users\cmullin\code\spikechat'
     codex_path_status_at_audit: nonexistent
     codex_project_path_current: 'C:\Users\cmullin\code\chat'
@@ -221,6 +229,7 @@ projects:
     dependencies: []
     baseline_commit: 98da936
     reviewed_feature_commit: 0646b97
+    spike_name_commit: 11ff0b9
     risks:
       - Installed PWA and deployed-content equivalence remain to be verified before legacy repository archival.
     uncommitted_backup_ref: backup/pre-normalization-work-2026-08-04

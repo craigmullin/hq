@@ -31,10 +31,10 @@ Status: complete
 
 Status: in progress
 
-- Chat's uncommitted work is protected and its full legacy history is
-  verified in `chat.git`; the work is reviewed, committed, and baselined. Retain
-  `spikechat.git` until installed-PWA and deployed-content verification is
-  complete.
+- SpikeChat's uncommitted work is protected and its full legacy history is
+  verified in `spikechat.git`; the work is reviewed, committed, and baselined.
+  Retain dated backup refs until installed-PWA and deployed-content verification
+  is complete.
 - Design and CMDC now preserve the shared history in their intended canonical
   homes and use ordinary cleanup commits to enforce their boundaries.
 - Preserve Wonky Zipper history and clarify its production status.
@@ -56,5 +56,6 @@ Status: in progress
 
 Follow the approved sequence and branch workflow in
 `decisions/2026-08-04-development-workflow.md`. The first product change is the
-CMDC refactor; Chat follows. Stat modernization has started early because its
-legacy production client was broken and its migration was explicitly approved.
+CMDC refactor; SpikeChat follows. SpikeStat modernization has started early
+because its legacy production client was broken and its migration was
+explicitly approved.

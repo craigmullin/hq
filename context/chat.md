@@ -1,16 +1,14 @@
-# Chat context
+# SpikeChat context
 
 Last reviewed: 2026-08-04
 
-Chat is the canonical product name. The local working tree, historically named
-SpikeChat, is a mature React/Vite PWA with 39
+SpikeChat is the canonical product name and a mature React/Vite PWA with 39
 commits, Firebase Hosting configuration, browser persistence, Vitest coverage,
 PWA functionality, public legal/product pages, and a substantial handoff.
 
-On 2026-08-04, `chat.git` was verified to contain the exact local `develop` and
-`main` branch tips. The local `origin` now points to `chat.git`; the prior
-`spikechat.git` remote is retained as `legacy-spikechat`. Three local files were
-modified at audit:
+On 2026-08-04, the repository was verified to contain the exact local `develop`
+and `main` branch tips. Its GitHub identity is restored to `spikechat.git`.
+Three local files were modified at audit:
 
 - `src/App.css`
 - `src/features/snapchat/SnapchatEditorPage.tsx`
@@ -26,5 +24,7 @@ the corrected public GitHub link were committed in baseline `98da936`. Lint,
 all 12 tests, the production build, PWA generation, rendered About-to-Snapchat
 flow, and console passed on 2026-08-04.
 Firebase ownership and Hosting site `spikechat-e682a` were verified, with
-default URL `https://spikechat-e682a.web.app`. Browser PWA and deployed-content
-verification remain required before considering the legacy repository archival.
+custom URL `https://spikechat.craigmullin.com`. Release `11ff0b9` restores the
+SpikeChat name throughout the application, PWA metadata, legal copy, repository,
+and GitHub identity. The custom domain returned HTTPS 200 with the SpikeChat
+title on 2026-08-04.
