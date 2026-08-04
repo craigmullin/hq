@@ -15,9 +15,10 @@ reconciliation.
 
 ## Next three actions
 
-1. Baseline Chat after reviewing its protected uncommitted work.
-2. Clarify Wonky Zipper's production status without changing its deployment.
-3. Begin project-local baselines for CMDC and Design.
+1. Clarify Wonky Zipper's production status without changing its deployment.
+2. Begin project-local baselines for CMDC and Design.
+3. Verify Chat's installed PWA and deployed-content equivalence before any
+   legacy repository archival decision.
 
 ## Blockers
 
@@ -52,6 +53,10 @@ reconciliation.
   dated backup refs, and ordinary cleanup commits.
 - Published CMDC `main` at `c7f7706` and Design `develop` at `5ba934b`; retained
   both remote review branches and changed no production deployment.
+- Reviewed and committed Chat's protected experimental-tools work at `0646b97`,
+  restoring pointer and keyboard caption-position support.
+- Established Chat's project-local operating baseline at `98da936`; lint, 12
+  tests, build, PWA generation, browser flow, console, and Hosting URL passed.
 
 ## Open questions
 

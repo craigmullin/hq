@@ -11,7 +11,7 @@ Last reviewed: 2026-08-04
 | Ledger | Auto-maintenance tracking application | `C:\Users\cmullin\code\ledger` | Empty repository | None known |
 | Stat | Volleyball statistics application | `C:\Users\cmullin\code\stat` | Empty repository | None known |
 | Design | Craig Mullin Design Language | `C:\Users\cmullin\code\design` | Design-language source; application separated | None known |
-| Chat | SpikeChat application | `C:\Users\cmullin\code\chat` | Mature React/Vite PWA; 39 commits at audit | Canonical origin verified; three modified files protected |
+| Chat | SpikeChat application | `C:\Users\cmullin\code\chat` | Baselined React/Vite PWA; protected work reviewed and committed | Deployed PWA verification remains before legacy archival |
 
 ## Portfolio boundaries
 

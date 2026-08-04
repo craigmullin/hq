@@ -160,21 +160,26 @@ projects:
     observed_local_remote: 'git@github.com:craigmullin/chat.git'
     retained_legacy_remote: 'git@github.com:craigmullin/spikechat.git'
     observed_branch: develop
-    maturity: mature-react-vite-pwa
+    maturity: baselined-react-vite-pwa
     commits_at_audit: 39
-    production_url: unknown
+    production_url: 'https://spikechat-e682a.web.app'
+    production_url_status: firebase-default-url-verified-2026-08-04
     hosting: Firebase project and site spikechat-e682a; default URL https://spikechat-e682a.web.app
     validation:
       lint: passed-2026-08-04
       tests: 12-passed-2026-08-04
       build: passed-2026-08-04
+      browser_interaction: passed-2026-08-04
+      hosting_response: passed-2026-08-04
     codex_project_path_at_audit: 'C:\Users\cmullin\code\spikechat'
     codex_path_status_at_audit: nonexistent
     codex_project_path_current: 'C:\Users\cmullin\code\chat'
     codex_path_status_current: canonical
     dependencies: []
+    baseline_commit: 98da936
+    reviewed_feature_commit: 0646b97
     risks:
-      - Three uncommitted files remain in the working tree and must be preserved.
+      - Installed PWA and deployed-content equivalence remain to be verified before legacy repository archival.
     uncommitted_backup_ref: backup/pre-normalization-work-2026-08-04
     uncommitted_files_at_audit:
       - src/App.css

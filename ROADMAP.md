@@ -32,15 +32,16 @@ Status: complete
 Status: in progress
 
 - Chat's uncommitted work is protected and its full SpikeChat history is
-  verified in `chat.git`; retain `spikechat.git` until application and deploy
-  verification is complete.
+  verified in `chat.git`; the work is reviewed, committed, and baselined. Retain
+  `spikechat.git` until installed-PWA and deployed-content verification is
+  complete.
 - Design and CMDC now preserve the shared history in their intended canonical
   homes and use ordinary cleanup commits to enforce their boundaries.
 - Preserve Wonky Zipper history and clarify its production status.
 
 ## Phase 4 — Baseline each project
 
-Status: pending
+Status: in progress
 
 - Add project-local operating documents without redesigning products.
 - Record maturity, setup, deployment, environment expectations, and production
