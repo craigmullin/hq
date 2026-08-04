@@ -13,6 +13,7 @@ configuration, so it currently has two responsibilities. Their later
 separation must preserve history and avoid prematurely defining Design as a
 runtime package. Lint and the production build passed on 2026-08-04. Firebase
 project and Hosting site `craigmullin` were verified, with default URL
-`https://craigmullin.web.app`; a second project/site, `craigmullin-com`, also
-exists and ownership intent remains unresolved. The delivery mechanism to
-products remains undecided.
+`https://craigmullin.web.app`. The `www.craigmullin.com` DNS CNAME and deployed
+content confirm this is the current production target. A second project/site,
+`craigmullin-com`, serves different content and remains unclassified. The
+delivery mechanism to products remains undecided.

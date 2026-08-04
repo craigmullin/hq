@@ -32,16 +32,17 @@ projects:
     default_branch: main
     maturity: empty-repository
     production_url: 'https://www.craigmullin.com'
-    production_url_status: user-identified-domain-not-audit-verified
-    hosting: Firebase ownership not yet reconciled; projects craigmullin and craigmullin-com both exist
+    production_url_status: verified-2026-08-04
+    hosting: Firebase project and site craigmullin; www DNS CNAME and deployed content verified
     codex_project_path_at_audit: 'C:\Users\cmullin\Documents\CMDC 2'
     codex_path_status_at_audit: different-empty-repository
-    codex_project_path_current: 'C:\Users\cmullin\Documents\CMDC 2'
-    codex_path_status_current: stale-different-repository
+    codex_project_path_current: 'C:\Users\cmullin\code\cmdc'
+    codex_path_status_current: canonical
     dependencies:
       - design
     risks:
       - Website implementation is currently inside the Design working tree.
+      - Firebase project craigmullin-com exists with different deployed content and must remain untouched until classified.
 
   - id: budget
     name: Budget
@@ -56,8 +57,8 @@ projects:
     hosting: unknown
     codex_project_path_at_audit: 'C:\Users\cmullin\Documents\Budget'
     codex_path_status_at_audit: different-empty-repository
-    codex_project_path_current: 'C:\Users\cmullin\Documents\Budget'
-    codex_path_status_current: stale-different-repository
+    codex_project_path_current: 'C:\Users\cmullin\code\budget'
+    codex_path_status_current: canonical
     dependencies: []
     risks: []
 
@@ -76,8 +77,8 @@ projects:
     hosting: unknown
     codex_project_path_at_audit: 'C:\Users\cmullin\Documents\Wonky Zipper'
     codex_path_status_at_audit: different-empty-repository
-    codex_project_path_current: 'C:\Users\cmullin\Documents\Wonky Zipper'
-    codex_path_status_current: stale-different-repository
+    codex_project_path_current: 'C:\Users\cmullin\code\wonkyzipper'
+    codex_path_status_current: canonical
     dependencies: []
     risks:
       - Production, placeholder, or historical status is unknown.
@@ -95,8 +96,8 @@ projects:
     hosting: unknown
     codex_project_path_at_audit: 'C:\Users\cmullin\Documents\Garage Ledger'
     codex_path_status_at_audit: different-empty-repository
-    codex_project_path_current: 'C:\Users\cmullin\Documents\Garage Ledger'
-    codex_path_status_current: stale-different-repository
+    codex_project_path_current: 'C:\Users\cmullin\code\ledger'
+    codex_path_status_current: canonical
     dependencies: []
     risks: []
 
@@ -113,8 +114,8 @@ projects:
     hosting: unknown
     codex_project_path_at_audit: 'C:\Users\cmullin\code\spikestat-pwa-epsilon'
     codex_path_status_at_audit: nonexistent
-    codex_project_path_current: 'C:\Users\cmullin\code\spikestat-pwa-epsilon'
-    codex_path_status_current: stale-nonexistent
+    codex_project_path_current: 'C:\Users\cmullin\code\stat'
+    codex_path_status_current: canonical
     dependencies: []
     risks: []
 
@@ -135,8 +136,8 @@ projects:
       build: passed-2026-08-04
     codex_project_path_at_audit: 'C:\Users\cmullin\code\mullin-design-language'
     codex_path_status_at_audit: nonexistent
-    codex_project_path_current: 'C:\Users\cmullin\code\mullin-design-language'
-    codex_path_status_current: stale-nonexistent
+    codex_project_path_current: 'C:\Users\cmullin\code\design'
+    codex_path_status_current: canonical
     dependencies: []
     risks:
       - Repository currently combines design-language and CMDC application roles.
@@ -162,8 +163,8 @@ projects:
       build: passed-2026-08-04
     codex_project_path_at_audit: 'C:\Users\cmullin\code\spikechat'
     codex_path_status_at_audit: nonexistent
-    codex_project_path_current: 'C:\Users\cmullin\code\spikechat'
-    codex_path_status_current: stale-nonexistent
+    codex_project_path_current: 'C:\Users\cmullin\code\chat'
+    codex_path_status_current: canonical
     dependencies: []
     risks:
       - Three uncommitted files remain in the working tree and must be preserved.

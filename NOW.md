@@ -10,23 +10,19 @@ CMDC ecosystem before any product repository is normalized.
 
 ## Current focus
 
-Phase 2 and early Phase 3: correct saved Codex paths and continue verified,
-history-preserving repository identity reconciliation.
+Phase 3: continue verified, history-preserving repository identity
+reconciliation.
 
 ## Next three actions
 
-1. Correct the seven stale saved Codex product/design project paths without
-   deleting any old directories.
-2. Verify Design and CMDC builds and deployment ownership before separating the
-   website from the design-language repository.
-3. Baseline Chat after reviewing its protected uncommitted work.
+1. Prepare the history-preserving Design/CMDC source separation now that the
+   production target is verified.
+2. Baseline Chat after reviewing its protected uncommitted work.
+3. Clarify Wonky Zipper's production status without changing its deployment.
 
 ## Blockers
 
 - Production URLs and hosting details are not verified for most projects.
-- Several saved Codex projects point to empty, stale, or nonexistent paths.
-- The current Codex tooling can list saved projects but cannot update their
-  paths; UI correction remains required.
 
 ## Recently completed
 
@@ -45,6 +41,10 @@ history-preserving repository identity reconciliation.
   Design/CMDC lint and production build.
 - Verified Firebase ownership and Hosting sites for `spikechat-e682a`,
   `craigmullin`, and `craigmullin-com` without changing them.
+- Verified all eight saved Codex projects point to their canonical
+  `C:\Users\cmullin\code\<project>` repositories; no old directory was deleted.
+- Verified `www.craigmullin.com` points to `craigmullin.web.app` and serves the
+  same deployed content; `craigmullin-com` remains untouched and unclassified.
 
 ## Open questions
 

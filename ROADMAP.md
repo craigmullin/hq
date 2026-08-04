@@ -18,7 +18,7 @@ Status: complete
 
 ## Phase 2 — Correct saved Codex project paths
 
-Status: in progress
+Status: complete
 
 - Point each saved project to its matching directory under
   `C:\Users\cmullin\code`.
