@@ -8,14 +8,11 @@ verified to contain the exact local `develop` and `main` branch tips. The local
 `origin` now points to `design.git`; the prior `mullin-design-language.git`
 remote is retained as `legacy-mullin-design-language`.
 
-The working tree also contains the CMDC React/Vite website and Firebase
-configuration, so it currently has two responsibilities. Their later
-separation must preserve history and avoid prematurely defining Design as a
-runtime package. Lint and the production build passed on 2026-08-04. Firebase
-project and Hosting site `craigmullin` were verified, with default URL
-`https://craigmullin.web.app`. The `www.craigmullin.com` DNS CNAME and deployed
-content confirm this is the current production target. The user deleted the
-noncanonical `craigmullin-com` project, and its absence was verified on
-2026-08-04. A proposed separation plan preserves the full interleaved history
-in both Design and CMDC, then uses ordinary cleanup commits to establish their
-boundaries. The delivery mechanism to products remains undecided.
+On 2026-08-04, ordinary cleanup commit `5ba934b` removed the CMDC application
+runtime from Design `develop` without rewriting the shared history. The branch
+retains all principles, tokens, typography, component specifications,
+references, questions, and explorations. The combined pre-separation tip is
+retained at `backup/pre-separation-2026-08-04`, and the legacy remote remains.
+
+Design is guidance and source material rather than a runtime package. Its
+delivery mechanism to products remains undecided.

@@ -15,9 +15,9 @@ reconciliation.
 
 ## Next three actions
 
-1. Review and approve the proposed Design/CMDC separation record.
-2. Execute the separation on non-destructive branches and verify both results.
-3. Baseline Chat after reviewing its protected uncommitted work.
+1. Baseline Chat after reviewing its protected uncommitted work.
+2. Clarify Wonky Zipper's production status without changing its deployment.
+3. Begin project-local baselines for CMDC and Design.
 
 ## Blockers
 
@@ -48,6 +48,10 @@ reconciliation.
   accessible Firebase project list.
 - Mapped the interleaved Design/CMDC history and proposed a no-rewrite,
   shared-history separation plan.
+- Implemented the approved Design/CMDC separation with full ancestry preserved,
+  dated backup refs, and ordinary cleanup commits.
+- Published CMDC `main` at `c7f7706` and Design `develop` at `5ba934b`; retained
+  both remote review branches and changed no production deployment.
 
 ## Open questions
 

@@ -30,18 +30,24 @@ projects:
     intended_remote: 'git@github.com:craigmullin/cmdc.git'
     observed_local_remote: 'git@github.com:craigmullin/cmdc.git'
     default_branch: main
-    maturity: empty-repository
+    observed_branch: main
+    maturity: developed-react-vite-application
     production_url: 'https://www.craigmullin.com'
     production_url_status: verified-2026-08-04
     hosting: Firebase project and site craigmullin; www DNS CNAME and deployed content verified
+    validation:
+      lint: passed-2026-08-04-after-separation
+      build: passed-2026-08-04-after-separation
+      production_asset_identity: matched-2026-08-04
     codex_project_path_at_audit: 'C:\Users\cmullin\Documents\CMDC 2'
     codex_path_status_at_audit: different-empty-repository
     codex_project_path_current: 'C:\Users\cmullin\code\cmdc'
     codex_path_status_current: canonical
     dependencies:
       - design
-    risks:
-      - Website implementation is currently inside the Design working tree.
+    preserved_history_ref: backup/imported-design-history-2026-08-04
+    separation_commit: c7f7706
+    risks: []
     separation_plan: decisions/2026-08-04-cmdc-design-separation.md
 
   - id: budget
@@ -128,20 +134,21 @@ projects:
     observed_local_remote: 'git@github.com:craigmullin/design.git'
     retained_legacy_remote: 'git@github.com:craigmullin/mullin-design-language.git'
     observed_branch: develop
-    maturity: developed-design-system-and-website
+    maturity: design-language-source
     production_url: unknown
-    hosting: Firebase project craigmullin; site craigmullin; default URL https://craigmullin.web.app
+    hosting: none
     validation:
       lint: passed-2026-08-04
       build: passed-2026-08-04
+      separation_boundary: verified-2026-08-04
     codex_project_path_at_audit: 'C:\Users\cmullin\code\mullin-design-language'
     codex_path_status_at_audit: nonexistent
     codex_project_path_current: 'C:\Users\cmullin\code\design'
     codex_path_status_current: canonical
     dependencies: []
-    risks:
-      - Repository currently combines design-language and CMDC application roles.
-      - Application dependencies use latest declarations and need later review.
+    preserved_history_ref: backup/pre-separation-2026-08-04
+    separation_commit: 5ba934b
+    risks: []
 
   - id: chat
     name: Chat

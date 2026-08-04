@@ -29,15 +29,13 @@ Status: complete
 
 ## Phase 3 — Reconcile repository identities
 
-Status: in progress; architectural approval remains required for CMDC/Design separation
+Status: in progress
 
 - Chat's uncommitted work is protected and its full SpikeChat history is
   verified in `chat.git`; retain `spikechat.git` until application and deploy
   verification is complete.
-- Preserve Design history and deliberately separate the CMDC website from the
-  reusable design-language source.
-- Establish `design.git` and `cmdc.git` as their intended canonical homes only
-  after build and deployment verification.
+- Design and CMDC now preserve the shared history in their intended canonical
+  homes and use ordinary cleanup commits to enforce their boundaries.
 - Preserve Wonky Zipper history and clarify its production status.
 
 ## Phase 4 — Baseline each project

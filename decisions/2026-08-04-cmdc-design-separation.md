@@ -1,7 +1,7 @@
 # Separate CMDC application from Design without rewriting history
 
 - Date: 2026-08-04
-- Status: proposed
+- Status: approved and implemented
 - Scope: CMDC and Design
 - Decision owner: unknown
 
@@ -71,3 +71,15 @@ making a reusable runtime package decision before product needs justify one.
    runtime files, update its README, and verify retained assets.
 5. Push both separation branches for review. Do not change production hosting.
 6. Merge only after verifying CMDC output against the current production site.
+
+## Implementation
+
+Completed 2026-08-04 without history rewriting or production deployment.
+
+- CMDC `main`: cleanup commit `c7f7706`; pre-cleanup tip retained at
+  `backup/imported-design-history-2026-08-04`.
+- Design `develop`: cleanup commit `5ba934b`; pre-cleanup tip retained at
+  `backup/pre-separation-2026-08-04`.
+- Review branches `codex/separate-cmdc` and `codex/separate-design` remain
+  available remotely.
+- CMDC lint and build passed, and generated asset identities matched production.

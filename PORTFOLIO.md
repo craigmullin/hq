@@ -5,20 +5,19 @@ Last reviewed: 2026-08-04
 | Project | Responsibility | Intended local repository | Audited condition | Identity risk |
 |---|---|---|---|---|
 | HQ | Portfolio control plane | `C:\Users\cmullin\code\hq` | Baseline committed and pushed | None known |
-| CMDC | `craigmullin.com` application | `C:\Users\cmullin\code\cmdc` | Empty repository | Website implementation currently lives in Design working tree |
+| CMDC | `craigmullin.com` application | `C:\Users\cmullin\code\cmdc` | Developed React/Vite site; full shared history preserved | None known |
 | Budget | Future home-budgeting application | `C:\Users\cmullin\code\budget` | Empty repository | None known |
 | Wonky Zipper | Independent retail brand and website | `C:\Users\cmullin\code\wonkyzipper` | Existing minimal HTML/CSS site; 19 commits at audit | Production status unknown |
 | Ledger | Auto-maintenance tracking application | `C:\Users\cmullin\code\ledger` | Empty repository | None known |
 | Stat | Volleyball statistics application | `C:\Users\cmullin\code\stat` | Empty repository | None known |
-| Design | Craig Mullin Design Language | `C:\Users\cmullin\code\design` | Developed design system plus CMDC site | Canonical origin verified; CMDC separation remains |
+| Design | Craig Mullin Design Language | `C:\Users\cmullin\code\design` | Design-language source; application separated | None known |
 | Chat | SpikeChat application | `C:\Users\cmullin\code\chat` | Mature React/Vite PWA; 39 commits at audit | Canonical origin verified; three modified files protected |
 
 ## Portfolio boundaries
 
 - HQ coordinates the portfolio and owns no product code.
 - Design provides principles, tokens, typography, components, and standards.
-- CMDC owns the deployable `craigmullin.com` application once the approved
-  history-preserving separation is complete.
+- CMDC owns the deployable `craigmullin.com` application.
 - Wonky Zipper remains a distinct public brand while belonging to the internal
   portfolio.
 - Chat, Budget, Ledger, and Stat remain independently bounded products.
