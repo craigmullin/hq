@@ -10,14 +10,14 @@ portfolio while product repositories are normalized and modernized.
 
 ## Current focus
 
-Normalize canonical naming and design guidance, then migrate and modernize Stat
-without losing its legacy history or Firebase data contract.
+Apply the normalized portfolio identity and shared design guidance across
+product refactors while preserving each product's data and history.
 
 ## Next three actions
 
-1. Publish the canonical naming and updated shared design guidance.
-2. Import the legacy Stat history and protected uncommitted file into `stat`.
-3. Diagnose, redesign, refactor, and validate Stat against its Firebase backend.
+1. Connect the intended `stat.craigmullin.com` custom domain after DNS is ready.
+2. Plan the next product redesign against the approved Design guidance.
+3. Verify remaining production URLs and hosting projects.
 
 ## Blockers
 
@@ -74,6 +74,10 @@ without losing its legacy history or Firebase data contract.
 - Replaced Stat's transitional password flow with Google sign-in in release
   `1c2a08b`; enabled the Firebase provider and deployed owner-only Firestore
   rules for verified account `cmlmullin@gmail.com`.
+- Approved Playfair Display and Inter as the shared primary typography and
+  published Design commit `86d1f64`.
+- Published and deployed Stat release `07193be` with a public synthetic-data
+  demo and a separate private Google-authenticated owner workspace.
 
 ## Open questions
 

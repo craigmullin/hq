@@ -121,9 +121,9 @@ projects:
     observed_local_remote: 'git@github.com:craigmullin/stat.git'
     default_branch: main
     integration_branch: develop
-    maturity: modernized-react-vite-pending-authenticated-validation
+    maturity: deployed-react-vite-public-demo-private-owner-workspace
     production_url: 'https://spikestat-pwa-epsilon.web.app'
-    production_url_status: legacy-deployment-verified-2026-08-04
+    production_url_status: demo-release-verified-2026-08-04
     hosting: Firebase project and site spikestat-pwa-epsilon; default URL https://spikestat-pwa-epsilon.web.app
     legacy_source_path: 'C:\Users\cmullin\code\spikestat-pwa-epsilon'
     legacy_source_remote: 'https://craigmullin@bitbucket.org/craigmullin/spikestat-pwa-epsilon.git'
@@ -133,6 +133,7 @@ projects:
     production_release_commit: 7c56a18
     password_recovery_commit: f9b0590
     google_sign_in_commit: 1c2a08b
+    public_demo_commit: 07193be
     preserved_legacy_branches: 15
     codex_project_path_at_audit: 'C:\Users\cmullin\code\spikestat-pwa-epsilon'
     codex_path_status_at_audit: legacy-source-not-canonical
@@ -153,10 +154,12 @@ projects:
       google_provider: enabled-2026-08-04
       owner_only_firestore_rules: deployed-2026-08-04
       google_sign_in_screen: verified-2026-08-04
+      public_demo_browser_flow: passed-2026-08-04
+      authenticated_production_data_flow: verified-2026-08-04
+      public_demo_hosting_deploy: passed-2026-08-04
     risks:
       - Preserve legacy history and the uncommitted src/components/Delete.vue file until the rewrite and backend migration are verified.
-      - Verify authenticated data access and effective Firestore rules before deployment.
-      - Authenticated reads and writes require a real test account before deployment.
+      - Remove the legacy service-worker cleanup after the installed-client transition window.
 
   - id: design
     name: Design
@@ -184,6 +187,7 @@ projects:
     dependencies: []
     preserved_history_ref: backup/pre-separation-2026-08-04
     separation_commit: 5ba934b
+    typography_commit: 86d1f64
     risks: []
 
   - id: chat

@@ -9,8 +9,8 @@ Last reviewed: 2026-08-04
 | Budget | Future home-budgeting application | `C:\Users\cmullin\code\budget` | Documentation baseline prepared; implementation intentionally absent | Product outcome unknown |
 | Wonky Zipper | Independent retail brand and website | `C:\Users\cmullin\code\wonkyzipper` | Existing minimal HTML/CSS site; 19 commits at audit | Production status unknown |
 | Ledger | Auto-maintenance tracking application | `C:\Users\cmullin\code\ledger` | Documentation baseline prepared; implementation intentionally absent | Initial scope unknown |
-| Stat | Volleyball statistics application | `C:\Users\cmullin\code\stat` | Legacy history imported; React/TypeScript/Vite refactor validated locally | Authenticated Firestore flow and deployment pending |
-| Design | Shared design system and product guidance | `C:\Users\cmullin\code\design` | Updated v1 guidance and canonical naming prepared | Product accent hex values unresolved |
+| Stat | Volleyball statistics application | `C:\Users\cmullin\code\stat` | Public synthetic-data demo and private Google-authenticated owner workspace deployed | Custom domain pending |
+| Design | Shared design system and product guidance | `C:\Users\cmullin\code\design` | Updated v1 guidance; Playfair Display and Inter approved | Product accent hex values unresolved |
 | Chat | Chat application | `C:\Users\cmullin\code\chat` | Canonical naming applied; lint, tests, build, and PWA generation pass | Deployed PWA verification remains before legacy archival |
 
 ## Portfolio boundaries
