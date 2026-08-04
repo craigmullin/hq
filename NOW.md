@@ -15,7 +15,7 @@ product refactors while preserving each product's data and history.
 
 ## Next three actions
 
-1. Connect the intended `stat.craigmullin.com` custom domain after DNS is ready.
+1. Verify Firebase finishes provisioning HTTPS for `spikestat.craigmullin.com`.
 2. Plan the next product redesign against the approved Design guidance.
 3. Verify remaining production URLs and hosting projects.
 

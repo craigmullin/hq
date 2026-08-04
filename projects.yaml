@@ -122,9 +122,10 @@ projects:
     default_branch: main
     integration_branch: develop
     maturity: deployed-react-vite-public-demo-private-owner-workspace
-    production_url: 'https://spikestat-pwa-epsilon.web.app'
-    production_url_status: demo-release-verified-2026-08-04
-    hosting: Firebase project and site spikestat-pwa-epsilon; default URL https://spikestat-pwa-epsilon.web.app
+    production_url: 'https://spikestat.craigmullin.com'
+    production_url_status: dns-target-verified-tls-pending-2026-08-04
+    firebase_default_url: 'https://spikestat-pwa-epsilon.web.app'
+    hosting: Firebase project and site spikestat-pwa-epsilon; custom-domain CNAME points to https://spikestat-pwa-epsilon.web.app; HTTPS certificate provisioning pending
     legacy_source_path: 'C:\Users\cmullin\code\spikestat-pwa-epsilon'
     legacy_source_remote: 'https://craigmullin@bitbucket.org/craigmullin/spikestat-pwa-epsilon.git'
     legacy_source_status: present-with-history-and-uncommitted-work-verified-2026-08-04

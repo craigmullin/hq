@@ -28,4 +28,6 @@ synthetic in-memory data. Match creation, game tracking, saving, and viewing
 passed browser validation. The private owner workspace and its Firestore data
 remain behind Google sign-in and owner-only rules. The release also adopts the
 approved Playfair Display and Inter typography and is deployed to Firebase
-Hosting. `stat.craigmullin.com` is intended but not yet configured.
+Hosting. `spikestat.craigmullin.com` is the approved public domain. Its CNAME
+target was verified on 2026-08-04; Firebase HTTPS certificate provisioning was
+still pending at that review.
