@@ -69,6 +69,8 @@ without losing its legacy history or Firebase data contract.
   to `stat.git`.
 - Promoted Stat release `7c56a18` to `main` and deployed it to Firebase
   Hosting with a one-time legacy service-worker cleanup.
+- Deployed Stat password recovery release `f9b0590` for legacy users who no
+  longer know their Firebase password.
 
 ## Open questions
 

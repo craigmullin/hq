@@ -16,3 +16,5 @@ audit pass. Authenticated Firestore reads and writes remain to be tested before
 deployment. Production release `7c56a18` is live with a one-time cleanup worker
 for the retired Vue PWA cache. Previously installed clients may show the old
 shell until their browser performs its next service-worker update check.
+Release `f9b0590` adds verified Firebase password recovery to the deployed login
+screen.
