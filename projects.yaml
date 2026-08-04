@@ -1,0 +1,150 @@
+schema_version: 1
+portfolio: CMDC
+last_reviewed: 2026-08-04
+registry_status: audit-baseline
+
+projects:
+  - id: hq
+    name: HQ
+    kind: portfolio-control-plane
+    responsibility: Portfolio coordination; no product code
+    intended_local_path: 'C:\Users\cmullin\code\hq'
+    intended_remote: 'git@github.com:craigmullin/hq.git'
+    observed_local_remote: 'git@github.com:craigmullin/hq.git'
+    default_branch: main
+    maturity: initial-baseline
+    production_url: unknown
+    hosting: unknown
+    codex_project_path_at_audit: 'C:\Users\cmullin\Documents\cmdc'
+    codex_path_status_at_audit: different-empty-repository
+    dependencies: []
+    risks: []
+
+  - id: cmdc
+    name: CMDC
+    kind: website-application
+    responsibility: craigmullin.com
+    intended_local_path: 'C:\Users\cmullin\code\cmdc'
+    intended_remote: 'git@github.com:craigmullin/cmdc.git'
+    observed_local_remote: 'git@github.com:craigmullin/cmdc.git'
+    default_branch: main
+    maturity: empty-repository
+    production_url: 'https://www.craigmullin.com'
+    production_url_status: user-identified-domain-not-audit-verified
+    hosting: unknown
+    codex_project_path_at_audit: 'C:\Users\cmullin\Documents\CMDC 2'
+    codex_path_status_at_audit: different-empty-repository
+    dependencies:
+      - design
+    risks:
+      - Website implementation is currently inside the Design working tree.
+
+  - id: budget
+    name: Budget
+    kind: future-application
+    responsibility: Home budgeting
+    intended_local_path: 'C:\Users\cmullin\code\budget'
+    intended_remote: 'git@github.com:craigmullin/budget.git'
+    observed_local_remote: 'git@github.com:craigmullin/budget.git'
+    default_branch: main
+    maturity: empty-repository
+    production_url: unknown
+    hosting: unknown
+    codex_project_path_at_audit: 'C:\Users\cmullin\Documents\Budget'
+    codex_path_status_at_audit: different-empty-repository
+    dependencies: []
+    risks: []
+
+  - id: wonkyzipper
+    name: Wonky Zipper
+    kind: retail-website
+    responsibility: Independent retail brand and website
+    intended_local_path: 'C:\Users\cmullin\code\wonkyzipper'
+    intended_remote: 'git@github.com:craigmullin/wonkyzipper.git'
+    observed_local_remote: 'git@github.com:craigmullin/wonkyzipper.git'
+    default_branch: main
+    maturity: minimal-html-css-site
+    commits_at_audit: 19
+    production_url: 'https://wonkyzipper.com'
+    production_url_status: user-identified-domain-not-audit-verified
+    hosting: unknown
+    codex_project_path_at_audit: 'C:\Users\cmullin\Documents\Wonky Zipper'
+    codex_path_status_at_audit: different-empty-repository
+    dependencies: []
+    risks:
+      - Production, placeholder, or historical status is unknown.
+
+  - id: ledger
+    name: Ledger
+    kind: future-application
+    responsibility: Auto-maintenance tracking
+    intended_local_path: 'C:\Users\cmullin\code\ledger'
+    intended_remote: 'git@github.com:craigmullin/ledger.git'
+    observed_local_remote: 'git@github.com:craigmullin/ledger.git'
+    default_branch: main
+    maturity: empty-repository
+    production_url: unknown
+    hosting: unknown
+    codex_project_path_at_audit: 'C:\Users\cmullin\Documents\Garage Ledger'
+    codex_path_status_at_audit: different-empty-repository
+    dependencies: []
+    risks: []
+
+  - id: stat
+    name: Stat
+    kind: future-application
+    responsibility: Volleyball statistics tracking
+    intended_local_path: 'C:\Users\cmullin\code\stat'
+    intended_remote: 'git@github.com:craigmullin/stat.git'
+    observed_local_remote: 'git@github.com:craigmullin/stat.git'
+    default_branch: main
+    maturity: empty-repository
+    production_url: unknown
+    hosting: unknown
+    codex_project_path_at_audit: 'C:\Users\cmullin\code\spikestat-pwa-epsilon'
+    codex_path_status_at_audit: nonexistent
+    dependencies: []
+    risks: []
+
+  - id: design
+    name: Design
+    kind: design-language
+    responsibility: Craig Mullin Design Language, tokens, components, and standards
+    intended_local_path: 'C:\Users\cmullin\code\design'
+    intended_remote: 'git@github.com:craigmullin/design.git'
+    observed_local_remote: 'git@github.com:craigmullin/mullin-design-language.git'
+    observed_branch: develop
+    maturity: developed-design-system-and-website
+    production_url: unknown
+    hosting: Firebase project craigmullin observed for embedded CMDC site
+    codex_project_path_at_audit: 'C:\Users\cmullin\code\mullin-design-language'
+    codex_path_status_at_audit: nonexistent
+    dependencies: []
+    risks:
+      - Intended and observed remotes differ.
+      - Repository currently combines design-language and CMDC application roles.
+      - Application dependencies use latest declarations and need later review.
+
+  - id: chat
+    name: Chat
+    product_name: SpikeChat
+    kind: pwa-application
+    responsibility: SpikeChat
+    intended_local_path: 'C:\Users\cmullin\code\chat'
+    intended_remote: 'git@github.com:craigmullin/chat.git'
+    observed_local_remote: 'git@github.com:craigmullin/spikechat.git'
+    observed_branch: develop
+    maturity: mature-react-vite-pwa
+    commits_at_audit: 39
+    production_url: unknown
+    hosting: Firebase Hosting; project identifier unknown
+    codex_project_path_at_audit: 'C:\Users\cmullin\code\spikechat'
+    codex_path_status_at_audit: nonexistent
+    dependencies: []
+    risks:
+      - Intended and observed remotes differ.
+      - Three uncommitted files must be protected before normalization.
+    uncommitted_files_at_audit:
+      - src/App.css
+      - src/features/snapchat/SnapchatEditorPage.tsx
+      - src/pages/AboutPage.tsx
