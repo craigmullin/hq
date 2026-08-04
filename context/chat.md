@@ -2,7 +2,8 @@
 
 Last reviewed: 2026-08-04
 
-Chat owns SpikeChat. The local working tree is a mature React/Vite PWA with 39
+Chat is the canonical product name. The local working tree, historically named
+SpikeChat, is a mature React/Vite PWA with 39
 commits, Firebase Hosting configuration, browser persistence, Vitest coverage,
 PWA functionality, public legal/product pages, and a substantial handoff.
 

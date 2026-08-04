@@ -1,5 +1,5 @@
 schema_version: 1
-portfolio: CMDC
+portfolio: HQ
 last_reviewed: 2026-08-04
 registry_status: normalization-in-progress
 
@@ -61,7 +61,7 @@ projects:
     observed_local_remote: 'git@github.com:craigmullin/budget.git'
     default_branch: main
     integration_branch: develop
-    maturity: empty-repository
+    maturity: documentation-baseline-implementation-not-started
     production_url: unknown
     hosting: unknown
     codex_project_path_at_audit: 'C:\Users\cmullin\Documents\Budget'
@@ -102,7 +102,7 @@ projects:
     observed_local_remote: 'git@github.com:craigmullin/ledger.git'
     default_branch: main
     integration_branch: develop
-    maturity: empty-repository
+    maturity: documentation-baseline-implementation-not-started
     production_url: unknown
     hosting: unknown
     codex_project_path_at_audit: 'C:\Users\cmullin\Documents\Garage Ledger'
@@ -114,16 +114,17 @@ projects:
 
   - id: stat
     name: Stat
-    kind: future-application
-    responsibility: SpikeStat rewrite for parents and other interested parties tracking a volleyball player's statistics
+    kind: application
+    responsibility: Stat application for parents and other interested parties tracking a volleyball player's statistics
     intended_local_path: 'C:\Users\cmullin\code\stat'
     intended_remote: 'git@github.com:craigmullin/stat.git'
     observed_local_remote: 'git@github.com:craigmullin/stat.git'
     default_branch: main
     integration_branch: develop
-    maturity: empty-repository
-    production_url: unknown
-    hosting: unknown
+    maturity: modernized-react-vite-pending-authenticated-validation
+    production_url: 'https://spikestat-pwa-epsilon.web.app'
+    production_url_status: legacy-deployment-verified-2026-08-04
+    hosting: Firebase project and site spikestat-pwa-epsilon; default URL https://spikestat-pwa-epsilon.web.app
     legacy_source_path: 'C:\Users\cmullin\code\spikestat-pwa-epsilon'
     legacy_source_remote: 'https://craigmullin@bitbucket.org/craigmullin/spikestat-pwa-epsilon.git'
     legacy_source_status: present-with-history-and-uncommitted-work-verified-2026-08-04
@@ -133,14 +134,23 @@ projects:
     codex_project_path_current: 'C:\Users\cmullin\code\stat'
     codex_path_status_current: canonical
     dependencies: []
+    validation:
+      firebase_project: verified-2026-08-04
+      firestore_database: verified-2026-08-04
+      production_shell: loads-with-legacy-permission-error-2026-08-04
+      lint: passed-2026-08-04
+      build: passed-2026-08-04
+      dependency_audit: zero-production-vulnerabilities-2026-08-04
+      signed_out_browser_flow: passed-2026-08-04
     risks:
       - Preserve legacy history and the uncommitted src/components/Delete.vue file until the rewrite and backend migration are verified.
-      - Inventory Firestore schema, security rules, indexes, authentication, and hosting before selecting a migration path.
+      - Verify authenticated data access and effective Firestore rules before deployment.
+      - Authenticated reads and writes require a real test account before deployment.
 
   - id: design
     name: Design
     kind: design-language
-    responsibility: Craig Mullin Design Language, tokens, components, and standards
+    responsibility: Shared design system, tokens, components, and product standards
     intended_local_path: 'C:\Users\cmullin\code\design'
     intended_remote: 'git@github.com:craigmullin/design.git'
     observed_local_remote: 'git@github.com:craigmullin/design.git'
@@ -148,13 +158,14 @@ projects:
     observed_branch: develop
     default_branch: main
     integration_branch: develop
-    maturity: design-language-source
+    maturity: updated-design-system-source
     production_url: unknown
     hosting: none
     validation:
       lint: passed-2026-08-04
       build: passed-2026-08-04
       separation_boundary: verified-2026-08-04
+      tokens_json: passed-2026-08-04
     codex_project_path_at_audit: 'C:\Users\cmullin\code\mullin-design-language'
     codex_path_status_at_audit: nonexistent
     codex_project_path_current: 'C:\Users\cmullin\code\design'
@@ -166,9 +177,8 @@ projects:
 
   - id: chat
     name: Chat
-    product_name: SpikeChat
     kind: pwa-application
-    responsibility: SpikeChat
+    responsibility: Chat application
     intended_local_path: 'C:\Users\cmullin\code\chat'
     intended_remote: 'git@github.com:craigmullin/chat.git'
     observed_local_remote: 'git@github.com:craigmullin/chat.git'
@@ -187,6 +197,7 @@ projects:
       build: passed-2026-08-04
       browser_interaction: passed-2026-08-04
       hosting_response: passed-2026-08-04
+      canonical_naming_lint_tests_build: passed-2026-08-04
     codex_project_path_at_audit: 'C:\Users\cmullin\code\spikechat'
     codex_path_status_at_audit: nonexistent
     codex_project_path_current: 'C:\Users\cmullin\code\chat'

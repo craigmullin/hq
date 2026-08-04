@@ -5,13 +5,13 @@ Last reviewed: 2026-08-04
 | Project | Responsibility | Intended local repository | Audited condition | Identity risk |
 |---|---|---|---|---|
 | HQ | Portfolio control plane | `C:\Users\cmullin\code\hq` | Baseline committed and pushed | None known |
-| CMDC | `craigmullin.com` application | `C:\Users\cmullin\code\cmdc` | Developed React/Vite site; full shared history preserved | None known |
-| Budget | Future home-budgeting application | `C:\Users\cmullin\code\budget` | Empty repository | None known |
+| CMDC | `craigmullin.com` application | `C:\Users\cmullin\code\cmdc` | Developed React/Vite site; canonical naming baseline prepared | Design-system refactor pending |
+| Budget | Future home-budgeting application | `C:\Users\cmullin\code\budget` | Documentation baseline prepared; implementation intentionally absent | Product outcome unknown |
 | Wonky Zipper | Independent retail brand and website | `C:\Users\cmullin\code\wonkyzipper` | Existing minimal HTML/CSS site; 19 commits at audit | Production status unknown |
-| Ledger | Auto-maintenance tracking application | `C:\Users\cmullin\code\ledger` | Empty repository | None known |
-| Stat | Volleyball statistics application | `C:\Users\cmullin\code\stat` | Empty repository | None known |
-| Design | Craig Mullin Design Language | `C:\Users\cmullin\code\design` | Design-language source; application separated | None known |
-| Chat | SpikeChat application | `C:\Users\cmullin\code\chat` | Baselined React/Vite PWA; protected work reviewed and committed | Deployed PWA verification remains before legacy archival |
+| Ledger | Auto-maintenance tracking application | `C:\Users\cmullin\code\ledger` | Documentation baseline prepared; implementation intentionally absent | Initial scope unknown |
+| Stat | Volleyball statistics application | `C:\Users\cmullin\code\stat` | Legacy history imported; React/TypeScript/Vite refactor validated locally | Authenticated Firestore flow and deployment pending |
+| Design | Shared design system and product guidance | `C:\Users\cmullin\code\design` | Updated v1 guidance and canonical naming prepared | Product accent hex values unresolved |
+| Chat | Chat application | `C:\Users\cmullin\code\chat` | Canonical naming applied; lint, tests, build, and PWA generation pass | Deployed PWA verification remains before legacy archival |
 
 ## Portfolio boundaries
 
@@ -21,6 +21,8 @@ Last reviewed: 2026-08-04
 - Wonky Zipper remains a distinct public brand while belonging to the internal
   portfolio.
 - Chat, Budget, Ledger, and Stat remain independently bounded products.
+- CMDC means only `craigmullin.com`; HQ is the portfolio umbrella and is not
+  named CMDC HQ.
 
 ## Dependency view
 

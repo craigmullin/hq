@@ -2,8 +2,8 @@
 
 Last reviewed: 2026-08-04
 
-Design owns the Craig Mullin Design Language: principles, tokens, typography,
-components, standards, and visual assets. On 2026-08-04, `design.git` was
+Design is the canonical product name and owns the shared design system:
+principles, tokens, typography, components, standards, and visual assets. On 2026-08-04, `design.git` was
 verified to contain the exact local `develop` and `main` branch tips. The local
 `origin` now points to `design.git`; the prior `mullin-design-language.git`
 remote is retained as `legacy-mullin-design-language`.

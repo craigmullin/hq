@@ -1,6 +1,6 @@
-# CMDC HQ
+# HQ
 
-CMDC HQ is the portfolio control plane for the CMDC ecosystem. It records what
+HQ is the portfolio control plane for Craig's product and site ecosystem. It records what
 the projects are, where their canonical repositories live, how they relate, and
 what portfolio-level work should happen next.
 
@@ -31,6 +31,9 @@ documentation. Do not silently resolve a project-level conflict in HQ.
 
 The ecosystem uses eight repositories: HQ plus seven product or design
 repositories. HQ coordinates them but does not own their implementation.
+
+CMDC refers only to the `craigmullin.com` site. HQ is distinct from CMDC and
+sits above every product and site in the portfolio.
 
 The initial registry reflects the read-only audit completed on 2026-08-04.
 Fields marked `unknown` have not been verified and must not be guessed.
