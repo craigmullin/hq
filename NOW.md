@@ -71,6 +71,9 @@ without losing its legacy history or Firebase data contract.
   Hosting with a one-time legacy service-worker cleanup.
 - Deployed Stat password recovery release `f9b0590` for legacy users who no
   longer know their Firebase password.
+- Replaced Stat's transitional password flow with Google sign-in in release
+  `1c2a08b`; enabled the Firebase provider and deployed owner-only Firestore
+  rules for verified account `cmlmullin@gmail.com`.
 
 ## Open questions
 

@@ -18,3 +18,8 @@ for the retired Vue PWA cache. Previously installed clients may show the old
 shell until their browser performs its next service-worker update check.
 Release `f9b0590` adds verified Firebase password recovery to the deployed login
 screen.
+
+Release `1c2a08b` replaces the transitional password UI with Google sign-in.
+Firebase provider settings use public name Stat and support email
+`cmlmullin@gmail.com`. Deployed Firestore rules allow reads and writes only for
+that verified Google identity.
