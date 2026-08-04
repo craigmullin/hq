@@ -42,7 +42,7 @@ projects:
       - design
     risks:
       - Website implementation is currently inside the Design working tree.
-      - Firebase project craigmullin-com exists with different deployed content and must remain untouched until classified.
+    separation_plan: decisions/2026-08-04-cmdc-design-separation.md
 
   - id: budget
     name: Budget

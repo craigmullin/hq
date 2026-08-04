@@ -15,10 +15,9 @@ reconciliation.
 
 ## Next three actions
 
-1. Prepare the history-preserving Design/CMDC source separation now that the
-   production target is verified.
-2. Baseline Chat after reviewing its protected uncommitted work.
-3. Clarify Wonky Zipper's production status without changing its deployment.
+1. Review and approve the proposed Design/CMDC separation record.
+2. Execute the separation on non-destructive branches and verify both results.
+3. Baseline Chat after reviewing its protected uncommitted work.
 
 ## Blockers
 
@@ -44,7 +43,11 @@ reconciliation.
 - Verified all eight saved Codex projects point to their canonical
   `C:\Users\cmullin\code\<project>` repositories; no old directory was deleted.
 - Verified `www.craigmullin.com` points to `craigmullin.web.app` and serves the
-  same deployed content; `craigmullin-com` remains untouched and unclassified.
+  same deployed content.
+- Verified the user-deleted `craigmullin-com` project is absent from the
+  accessible Firebase project list.
+- Mapped the interleaved Design/CMDC history and proposed a no-rewrite,
+  shared-history separation plan.
 
 ## Open questions
 

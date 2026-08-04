@@ -9,8 +9,9 @@ separate these roles while preserving history. The combined source passed lint
 and a production build on 2026-08-04. The `www.craigmullin.com` DNS CNAME points
 to `craigmullin.web.app`, and their deployed content matched exactly on
 2026-08-04. Firebase project/site `craigmullin` is therefore the verified
-current production target. Project/site `craigmullin-com` serves different
-content and must remain untouched until classified.
+current production target. The user deleted project `craigmullin-com`, and its
+absence from the accessible Firebase project list was verified on 2026-08-04.
 
-Unknown: apex-domain behavior, the purpose of `craigmullin-com`, and the
-application roadmap.
+A proposed history-preserving separation plan is recorded in
+`decisions/2026-08-04-cmdc-design-separation.md`. Unknown: apex-domain behavior
+and the application roadmap.

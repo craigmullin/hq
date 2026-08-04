@@ -14,6 +14,8 @@ separation must preserve history and avoid prematurely defining Design as a
 runtime package. Lint and the production build passed on 2026-08-04. Firebase
 project and Hosting site `craigmullin` were verified, with default URL
 `https://craigmullin.web.app`. The `www.craigmullin.com` DNS CNAME and deployed
-content confirm this is the current production target. A second project/site,
-`craigmullin-com`, serves different content and remains unclassified. The
-delivery mechanism to products remains undecided.
+content confirm this is the current production target. The user deleted the
+noncanonical `craigmullin-com` project, and its absence was verified on
+2026-08-04. A proposed separation plan preserves the full interleaved history
+in both Design and CMDC, then uses ordinary cleanup commits to establish their
+boundaries. The delivery mechanism to products remains undecided.
