@@ -230,6 +230,7 @@ projects:
     baseline_commit: 98da936
     reviewed_feature_commit: 0646b97
     spike_name_commit: 11ff0b9
+    launch_label_commit: ced48b7
     risks:
       - Installed PWA and deployed-content equivalence remain to be verified before legacy repository archival.
     uncommitted_backup_ref: backup/pre-normalization-work-2026-08-04

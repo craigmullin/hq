@@ -28,3 +28,6 @@ custom URL `https://spikechat.craigmullin.com`. Release `11ff0b9` restores the
 SpikeChat name throughout the application, PWA metadata, legal copy, repository,
 and GitHub identity. The custom domain returned HTTPS 200 with the SpikeChat
 title on 2026-08-04.
+
+Release `ced48b7` aligns both main-page calls to action to “Launch SpikeChat”;
+the deployed custom domain was verified to expose exactly two matching links.
